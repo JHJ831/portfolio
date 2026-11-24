@@ -1,0 +1,255 @@
+.about-page {
+  background: #f6f6f6;
+}
+
+.about-page .header a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.about-page .header [aria-current="page"] {
+  color: #0a0a0a;
+  font-weight: 750;
+}
+
+.about-home .morse i:nth-child(n) {
+  width: 13rem;
+  height: 13rem;
+}
+
+.about-profile {
+  display: flex;
+  min-height: 735rem;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 36rem;
+}
+
+.about-contact {
+  align-self: flex-start;
+  margin-top: 228rem;
+}
+
+.about-contact h1 {
+  font-size: 60rem;
+  font-weight: 750;
+  color: #082c60;
+}
+
+.about-contact ul {
+  margin-top: 44rem;
+  padding: 0 0 0 7rem;
+  list-style: none;
+  font-size: 25rem;
+  font-weight: 650;
+  line-height: 2.15;
+}
+
+.about-contact a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.about-contact a:hover {
+  text-decoration: underline;
+}
+
+.about-profile img {
+  width: 434rem;
+  height: 651rem;
+  object-fit: contain;
+  object-position: bottom;
+  margin-right: -20rem;
+}
+
+.resume-section {
+  display: grid;
+  grid-template-columns: 320rem minmax(0, 1fr);
+  border-top: 1px solid #a3a3a3;
+}
+
+.resume-section:last-child {
+  border-bottom: 1px solid #a3a3a3;
+}
+
+.resume-section h2 {
+  margin-top: 47rem;
+  color: #082c60;
+  font-size: 29rem;
+  line-height: 1.2;
+  font-weight: 750;
+}
+
+.resume-list {
+  padding: 0;
+  list-style: none;
+}
+
+.resume-entry {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-content: center;
+  align-items: baseline;
+  gap: 17rem 20rem;
+  min-height: 213rem;
+  padding: 35rem 0 36rem 26rem;
+}
+
+.resume-entry + .resume-entry {
+  border-top: 1px solid #d5d5d5;
+}
+
+.resume-entry-heading {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 7rem 50rem;
+}
+
+.resume-entry h3 {
+  font-size: 30rem;
+  line-height: 1.25;
+  font-weight: 750;
+}
+
+.resume-label, .resume-role {
+  font-size: 19rem;
+  line-height: 1.3;
+  font-weight: 550;
+}
+
+.resume-date {
+  font-size: 18rem;
+  font-weight: 750;
+  text-align: right;
+  white-space: nowrap;
+}
+
+.resume-description {
+  grid-column: 1 / -1;
+  font-size: 24rem;
+  line-height: 1.3;
+  font-weight: 550;
+}
+
+.resume-role {
+  grid-column: 1 / -1;
+}
+
+.resume-experience .resume-entry {
+  min-height: 231rem;
+}
+
+.resume-experience .resume-entry:is(:first-child, :last-child) {
+  min-height: 253rem;
+}
+
+.resume-education .resume-entry:first-child {
+  min-height: 270rem;
+}
+
+.resume-education .resume-entry:nth-child(2) {
+  min-height: 240rem;
+}
+
+.resume-education .resume-entry .resume-description {
+  margin-top: 31rem;
+}
+
+.resume-projects .resume-entry {
+  min-height: 226rem;
+}
+
+.about-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 105rem;
+  margin-top: 300rem;
+  background: #050505;
+}
+
+.about-footer .morse i {
+  background: #fff;
+}
+
+@media (max-width: 760px) {
+  .about-home .morse i:nth-child(n) {
+    width: 5rem;
+    height: 5rem;
+  }
+
+  .about-profile {
+    min-height: 0;
+    padding-top: 45rem;
+    gap: 12rem;
+  }
+
+  .about-contact {
+    margin: 4rem 0 22rem;
+    min-width: 0;
+  }
+
+  .about-contact h1 {
+    font-size: 32rem;
+  }
+
+  .about-contact ul {
+    margin-top: 13rem;
+    padding-left: 0;
+    font-size: 13rem;
+    overflow-wrap: anywhere;
+  }
+
+  .about-profile img {
+    width: min(41%, 180rem);
+    height: auto;
+    margin-right: 0;
+  }
+
+  .resume-section {
+    grid-template-columns: 1fr;
+  }
+
+  .resume-section h2 {
+    font-size: 22rem;
+    margin-top: 23rem;
+  }
+
+  .resume-section .resume-entry:nth-child(n) {
+    grid-template-columns: 1fr;
+    min-height: 0;
+    gap: 6rem;
+    padding: 17rem 0 18rem;
+  }
+
+  .resume-entry-heading {
+    gap: 3rem 12rem;
+  }
+
+  .resume-entry h3 {
+    font-size: 17rem;
+  }
+
+  .resume-label, .resume-role, .resume-date {
+    font-size: 12rem;
+  }
+
+  .resume-date {
+    text-align: left;
+    color: #454545;
+  }
+
+  .resume-description {
+    font-size: 14rem;
+  }
+
+  .resume-education .resume-entry .resume-description {
+    margin-top: 2rem;
+  }
+
+  .about-footer {
+    min-height: 62rem;
+    margin-top: 70rem;
+  }
+}
